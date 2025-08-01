@@ -91,7 +91,7 @@ hero p {
     max-width: 600px;
 }
 
-.hero-buttons {
+.buttons {
     margin-top: 2rem;
     display: flex;
     gap: 20px;
@@ -209,6 +209,119 @@ h2,h3,h4 {
     box-shadow: 0 6px 12px rgba(58, 134, 255, 0.3);
     background: var(--accent-3);
 }
+
+.edu-exp {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.education, .experience {
+    flex: 1;
+}
+
+.entry-box {
+    background: #1e1e24;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border-left: 3px solid #00ff9d;
+}
+
+.cv {
+    background: var(--accent-1);
+    color: var(--bg);
+}
+
+.cv:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 px 15px rgba(0, 255, 157, 0.3);
+}
+
+.skill {
+    background: var(--bg);
+    color: var(--text);
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 80px auto;
+}
+
+.skills-title {
+    color: var(--accent-1);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.skill-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 1rem 0;
+    max-width: 100%;
+}
+
+.skill-item {
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.circle-outer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 3px;
+    background: conic-gradient( #00ff9d var(--skill-percent),  #2d2d36 0 );
+}
+
+.circle-inner {
+    width: 100%;
+    height: 100%;
+    background: #0f0f12;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+        
+.skill-name {
+    font-size: 0.75rem;
+    margin-top: 5px;
+    word-break: break-all;
+    text-align: center;
+    color: var(--text);
+}
+        
+.percent {
+    color: var(--accent-1);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.skill-1 { --skill-percent: 90%; } /* JavaScript */
+.skill-2 { --skill-percent: 85%; } /* React */
+.skill-3 { --skill-percent: 80%; } /* Node.js */
+.skill-4 { --skill-percent: 75%; } /* Python */
+.skill-5 { --skill-percent: 90%; } /* CSS */
+.skill-6 { --skill-percent: 93%; } /* HTML */
+.skill-7 { --skill-percent: 68%; } /* MongoDB */
+.skill-8 { --skill-percent: 60%; } /* Docker */
+.skill-9 { --skill-percent: 80%; } /* Git */
+.skill-10 { --skill-percent: 70%; } /* AWS */
 
 @keyframes rotate-border {
     to {transform: rotate(360deg);}
