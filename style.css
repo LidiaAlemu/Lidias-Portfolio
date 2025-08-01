@@ -80,7 +80,7 @@ nav a:hover {
     line-height: 1.2;
 }
 
-hero h1 span {
+.span {
     color: var(--accent-1);
 }
 
