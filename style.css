@@ -323,6 +323,57 @@ h2,h3,h4 {
 .skill-9 { --skill-percent: 80%; } /* Git */
 .skill-10 { --skill-percent: 70%; } /* AWS */
 
+.services {
+  padding: 3rem 2rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.title {
+  text-align: center;
+  color: var(--accent-1);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #1e1e24;
+  border-radius: 10px;
+  padding: 2rem;
+  border-left: 3px solid #3a86ff;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 157, 0.1);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-3);
+}
+
+.service-card h3 {
+  color: var(--accent-1);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  line-height: 1.6;
+  color: var(--text);
+}
+
 @keyframes rotate-border {
     to {transform: rotate(360deg);}
 }
