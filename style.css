@@ -557,9 +557,138 @@ h2,h3,h4 {
     font-style: italic;
     position: relative;
     padding-left: 1rem;
-    border-left: 2px solid #3a86ff;
+    border-left: 2px solid var(--accent-3);
 }
 
+.contact {
+    padding: 1rem rem;
+    color: var(--text);
+}
+
+.contact-title {
+    text-align: center;
+    color: var(--accent-1);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0 2rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form, .contact-info {
+    background: #1e1e24;
+    border-radius: 10px;
+    padding: 2rem;
+    border-top: 3px solid var(--accent-3);
+}
+
+
+
+.contact-form h3, .contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: #2d2d36;
+    border: 1px solid var(--accent-3);
+    border-radius: 5px;
+    color: var(--text);
+    font-family: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background: var(--accent-1);
+    color: var(--bg);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--bg);
+    color: var(--accent-1);
+    outline: 1px solid var(--accent-1);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--accent-3);
+    width: 24px;
+}
+
+.contact-text h4 {
+    color: var(--text);
+    margin: 0 0 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-text a, .contact-text p {
+    color: #d1d1d1;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+    color: var(--accent-3);
+}
+
+.social-links h4 {
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #d1d1d1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    fill: var(--accent-3);
+}
+
+.social-icons a:hover {
+    color: var(--accent-3);
+}
 @keyframes rotate-border {
     to {transform: rotate(360deg);}
 }
