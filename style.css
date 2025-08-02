@@ -327,165 +327,237 @@ h2,h3,h4 {
 }
 
 .services {
-  padding: 3rem 2rem;
-  background: var(--bg);
-  color: var(--text);
+    padding: 3rem 2rem;
 }
 
 .title {
-  text-align: center;
-  color: var(--accent-1);
-  font-size: 2rem;
-  margin-bottom: 2rem;
+    text-align: center;
+    color: var(--accent-1);
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-card {
-  background: #1e1e24;
-  border-radius: 10px;
-  padding: 2rem;
-  border-left: 3px solid #3a86ff;
-  transition: transform 0.3s ease;
+    background: #1e1e24;
+    border-radius: 10px;
+    padding: 2rem;
+    border-left: 3px solid #3a86ff;
+    transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 255, 157, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 157, 0.1);
 }
 
 .service-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--accent-3);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-3);
 }
 
 .service-card h3 {
-  color: var(--accent-1);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+    color: var(--accent-1);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .service-card p {
-  line-height: 1.6;
-  color: var(--text);
+    line-height: 1.6;
+    color: var(--text);
 }
 
-.works-section {
-  padding: 3rem 2rem;
-  background: #0f0f12;
-  color: #f0f0f0;
+.works {
+    padding: 3rem 2rem;
+    background: #0f0f12;
+    color: #f0f0f0;
 }
 
-.section-title {
-  text-align: center;
-  color: #00ff9d;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+.work-title {
+    text-align: center;
+    color: var(--accent-1);
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .project-card {
-  background: #1e1e24;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
+    background: #1e1e24;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(58, 134, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(58, 134, 255, 0.2);
 }
 
 .project-image {
-  height: 200px;
-  overflow: hidden;
+    height: 200px;
+    overflow: hidden;
 }
 
 .project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .project-details {
-  padding: 1.5rem;
+    padding: 1.5rem;
 }
 
 .project-details h3 {
-  color: #f0f0f0;
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
 }
 
 .project-description {
-  color: #d1d1d1;
-  margin-bottom: 1rem;
-  line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 .project-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-skills span {
-  background: rgba(58, 134, 255, 0.2);
-  color: #3a86ff;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+    background: rgba(58, 134, 255, 0.2);
+    color: #3a86ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
 }
 
 .project-links {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .link-button {
-  background: #00ff9d;
-  color: #0f0f12;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
+    background: var(--accent-1);
+    color: var(--bg);
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .link-button:hover {
-  background: #0f0f12;
-  color: #00ff9d;
-  outline: 1px solid #00ff9d;
+    background: var(--bg);
+    color: var(--accent-1);
+    outline: 1px solid #00ff9d;
 }
 
 .link-button.secondary {
-  background: transparent;
-  color: #3a86ff;
-  outline: 1px solid #3a86ff;
+    background: transparent;
+    color: #3a86ff;
+    outline: 1px solid #3a86ff;
 }
 
 .link-button.secondary:hover {
-  background: rgba(58, 134, 255, 0.1);
+    background: rgba(58, 134, 255, 0.1);
+}
+
+.testimonials {
+    padding: 3rem 10rem;
+    
+}
+
+.test-title {
+    text-align: center;
+    color: var(--accent-1);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fe));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-card {
+    background: #1e1e24;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-top: 3px solid #3a86ff;
+    transition: transform 0.3s ease;
+}
+
+.testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.client-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-1);
+}
+
+.client-info p {
+    color: #d1d1d1;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.client-info h3 {
+    color: var(--text);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.rating {
+    font-size: 1.1rem;
+}
+
+.testimonials-text {
+    color: #d1d1d1;
+    line-height: 1.6;
+    font-style: italic;
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid #3a86ff;
 }
 
 @keyframes rotate-border {
