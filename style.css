@@ -668,7 +668,27 @@ textarea {
 
 .social-links h4 {
     color: var(--text);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.social-links {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-links h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--accent-3);
 }
 
 .social-icons {
@@ -677,7 +697,7 @@ textarea {
 }
 
 .social-icons a {
-    color: #d1d1d1;
+    color: var(--text);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
@@ -689,6 +709,116 @@ textarea {
 .social-icons a:hover {
     color: var(--accent-3);
 }
+
+.site-footer {
+  background: #0a0a0c;
+  color: var(--text);
+  padding: 3rem 2rem 1rem;
+  border-top: 1px solid #2d2d36;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  padding: 0 1rem;
+}
+
+.footer-logo {
+  color: var(--text);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo span {
+  color: var(--accent-1);
+}
+
+.copyright {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer-col h4 {
+  color: var(--accent-1);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: var(--accent-3);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-3);
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: var(--text);
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-3);
+}
+
+.footer-email {
+  color: var(--text);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: var(--accent-1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2d2d36;
+  color: #888;
+  font-size: 0.9rem;
+}
+
 @keyframes rotate-border {
     to {transform: rotate(360deg);}
 }
